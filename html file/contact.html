@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet"type="text/css" href="style3.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+  </head>
+  <body>
+    <section class="text-gray-600 body-font relative">
+  <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+    <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+      <div id="map"></div>
+      <script>
+        function initMap(){
+          var location= {lat:27.712020,lng:85.312950};
+          var map= new google.maps.Map(document.getElementById("map"),{
+            zoom: 4,
+            center: location
+          });
+          var marker= new google.maps.Marker({
+            position: location,
+            map:map
+          });
+        }
+      </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6uaTyyA2T81Stl_lYDKqrNAUiXUmC00k&callback=initMap">
+
+      </script>
+      <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+        <div class="lg:w-1/2 px-6">
+          <center><font size="5" color="white">ADDRESS</font>
+          <font color="white"><p class="mt-1">Samakhushi,Gongabu,Kathmandu,Nepal.</p><br></font></center>
+        </div>
+        <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+          <center><font size="5" color="white">EMAIL</font><br>
+          <font color="white"><p>grishmasa@gmail.com</p><br></font></center>
+          <center><font size="5" color="white">PHONE</font>
+          <font color="white"><p>+977-9862250503</p><br><br></font></center>
+        </div>
+      </div>
+    </div>
+    <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+      <font size="5" color="white">Feedback</font><br></br>
+      <p class="leading-relaxed mb-5 text-gray-600"></p>
+      <div class="relative mb-4">
+        <font color="white"><label for="name">Full Name</label></font>
+        <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+      </div><br><br>
+      <div class="relative mb-4">
+        <font color="white"><label for="email" class="leading-7 text-sm text-gray-600">Email</label></font>
+        <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+      </div><br><br>
+      <div class="relative mb-4">
+        <font color="white">  <label for="message" class="leading-7 text-sm text-gray-600">Type your message here.</label></font><br>
+        <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-500 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-400 h-32 text-base outline-none text-gray-900 py-1 px-3 resize-none leading-6 transition-colors duration-500 ease-in-out"></textarea>
+      </div><br><br>
+      <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"><a href="index.html">Submit</button></a><br><br>
+      <center><font size="5" color="white"><p class="text-xs text-gray-500 mt-3">Thanks for your Feedback<br>Stay Safe!!</p></font></center>
+    </div>
+  </div>
+</section>
+  </body>
+</html>

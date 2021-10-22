@@ -1,0 +1,42 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(payment.jpg);
+  height: 85vh;
+  background-size:cover;
+  background-position: cover;
+  font-family: 'Montserrat', sans-serif;
+}
+form{
+  width: 600px;
+  margin: 100px auto 0 auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 #30475e, 0 4px 8px 0 #30475e;
+  color: #fff;
+}
+h1{
+  text-align: center;
+}
+.box1{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin: 10px 0 15px 0;
+}
+.div1{
+  display: inline-block;
+}
+.box2{
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  margin: 10px 0 15px 0;
+}
+.btn{
+  width: 49%;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+}
